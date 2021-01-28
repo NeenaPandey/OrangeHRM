@@ -2,4 +2,6 @@
 Orange HRM Functional Test Suite - Selenium
 
 
-# Architecture
+# Class Diagram
+
+
