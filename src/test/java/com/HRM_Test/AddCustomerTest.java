@@ -36,7 +36,10 @@ public class AddCustomerTest extends BaseTest implements AutoConstant
 						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 9),
 						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 10),
 						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 11),
-						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 12));
+						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 12),
+						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 13),
+						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 14)
+						);
 		
 	}
 	

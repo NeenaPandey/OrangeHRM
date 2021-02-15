@@ -1,6 +1,6 @@
 package com.POM_HRM;
 
-import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,7 +11,8 @@ import com.HRM_Genrics.AutoConstant;
 
 
 
-public class HRM_LoginLogout  implements AutoConstant 
+
+public class HRM_LoginLogout implements AutoConstant 
 {
 	WebDriver driver;
 	@FindBy(xpath="//input[@name='txtUsername']")

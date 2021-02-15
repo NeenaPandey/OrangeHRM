@@ -1,7 +1,6 @@
 package com.POM_HRM;
 
 import java.io.IOException;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -11,8 +10,9 @@ import org.testng.Reporter;
 
 import com.HRM_Genrics.AutoConstant;
 import com.HRM_Genrics.ExcelLibrary;
+import com.HRM_Genrics.TestPage;
 
-public class AddCustomerPom implements AutoConstant
+public class AddCustomerPom extends TestPage implements AutoConstant
 {
 	WebDriver driver;
 
@@ -88,6 +88,15 @@ public class AddCustomerPom implements AutoConstant
 	@FindBy(xpath="//select[@data-handler='selectYear']")
 	private WebElement DateOfBirth;
 	
+	@FindBy(xpath="//select[@class='ui-datepicker-year']")
+	private WebElement clickOnyear;
+	
+	@FindBy(xpath="//select[@class='ui-datepicker-month']")
+	private WebElement clickOnMonth;
+	
+	@FindBy(xpath="//a[.=9]")
+	private WebElement BirthDate;
+		
 	@FindBy(id="personal_txtEmpNickName")
 	private WebElement NickName;
 	
@@ -97,9 +106,6 @@ public class AddCustomerPom implements AutoConstant
 	@FindBy(id="btnSave")
 	private WebElement SaveAllDetails;
 	
-	
-	
-
 	public AddCustomerPom(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
@@ -109,7 +115,8 @@ public class AddCustomerPom implements AutoConstant
 
 	public void addCustomer(String strFirstName, String strMiddleName, String strLastName, String strEmployeeId, String strUserName,
 							String strPassword,String strConfirmPassword, String strOtherId,String strDriverLicenseNo, String strSNNnumber,
-							String strSINnumber, String strNickName, String strNone) throws IOException, InterruptedException 
+							String strSINnumber, String strNickName, String strNone, String strDriverLicenseExpdate,
+							String strDOB) throws IOException, InterruptedException 
 	{
 		PIM.click();
 		Thread.sleep(2000);
@@ -138,8 +145,9 @@ public class AddCustomerPom implements AutoConstant
 		DriverLicenseNo.sendKeys(strDriverLicenseNo);
 		
 		LicenseExpiry.click();
-		LicenseExpiryDate.click();
-		
+		SelectDateInCalender( strDriverLicenseExpdate,  clickOnyear,  clickOnMonth ,  driver);
+
+				
 		SNNnumber.sendKeys(strSNNnumber);
 		SINnumber.sendKeys(strSINnumber);
 		
@@ -151,9 +159,11 @@ public class AddCustomerPom implements AutoConstant
 		sel2.selectByVisibleText("Indian");
 		
 		CalendarOfBirth.click();
+		SelectDateInCalender( strDOB,  clickOnyear,  clickOnMonth ,  driver);
 		
-		Select sel3 = new Select(DateOfBirth);
-		sel3.deselectByIndex(1999);
+		
+		/*Select sel3 = new Select(DateOfBirth);
+		sel3.deselectByIndex(1999);*/
 		
 		NickName.sendKeys(strNickName);
 		Militreyservice.sendKeys(strNone);
