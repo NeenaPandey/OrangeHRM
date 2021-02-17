@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]">
   <test name="Test(failed)">
     <classes>
-      <class name="com.HRM_Test.HRMContactDetailsTest">
+      <class name="com.HRM_Test.AddCustomerTest">
         <methods>
-          <include name="contactDetailsTest"/>
+          <include name="addCutomerTest"/>
           <include name="closeDriver"/>
           <include name="baseTest"/>
         </methods>
-      </class> <!-- com.HRM_Test.HRMContactDetailsTest -->
+      </class> <!-- com.HRM_Test.AddCustomerTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

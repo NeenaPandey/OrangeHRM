@@ -41,7 +41,10 @@ public class AddCustomerTest extends BaseTest implements AutoConstant
 						ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 14)
 						);
 		
+		add.DeteleCustomer(ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 0) 
+				+ " " + ExcelLibrary.getcellvalue(excel_path,"createCustomer", 1, 1));
 	}
+	
 	
 
 }

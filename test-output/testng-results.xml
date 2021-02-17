@@ -5,27 +5,27 @@
       <![CDATA[AmarAkbar]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="53390" started-at="2021-02-15T17:50:12Z" finished-at="2021-02-15T17:51:05Z">
+  <suite name="Suite" duration-ms="42767" started-at="2021-02-17T19:00:30Z" finished-at="2021-02-17T19:01:12Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="53390" started-at="2021-02-15T17:50:12Z" finished-at="2021-02-15T17:51:05Z">
-      <class name="com.HRM_Test.HRMContactDetailsTest">
-        <test-method status="PASS" signature="baseTest()[pri:0, instance:com.HRM_Test.HRMContactDetailsTest@2d6e8792]" name="baseTest" is-config="true" duration-ms="5362" started-at="2021-02-15T17:50:12Z" finished-at="2021-02-15T17:50:17Z">
+    <test name="Test" duration-ms="42767" started-at="2021-02-17T19:00:30Z" finished-at="2021-02-17T19:01:12Z">
+      <class name="com.HRM_Test.AddCustomerTest">
+        <test-method status="PASS" signature="baseTest()[pri:0, instance:com.HRM_Test.AddCustomerTest@2d6e8792]" name="baseTest" is-config="true" duration-ms="5546" started-at="2021-02-17T19:00:30Z" finished-at="2021-02-17T19:00:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- baseTest -->
-        <test-method status="PASS" signature="contactDetailsTest()[pri:0, instance:com.HRM_Test.HRMContactDetailsTest@2d6e8792]" name="contactDetailsTest" duration-ms="48011" started-at="2021-02-15T17:50:17Z" finished-at="2021-02-15T17:51:05Z">
+        <test-method status="PASS" signature="addCutomerTest()[pri:0, instance:com.HRM_Test.AddCustomerTest@2d6e8792]" name="addCutomerTest" duration-ms="37199" started-at="2021-02-17T19:00:35Z" finished-at="2021-02-17T19:01:12Z">
           <reporter-output>
             <line>
               <![CDATA[AmarAkbar]]>
             </line>
           </reporter-output>
-        </test-method> <!-- contactDetailsTest -->
-        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.HRM_Test.HRMContactDetailsTest@2d6e8792]" name="closeDriver" is-config="true" duration-ms="0" started-at="2021-02-15T17:51:05Z" finished-at="2021-02-15T17:51:05Z">
+        </test-method> <!-- addCutomerTest -->
+        <test-method status="PASS" signature="closeDriver()[pri:0, instance:com.HRM_Test.AddCustomerTest@2d6e8792]" name="closeDriver" is-config="true" duration-ms="1" started-at="2021-02-17T19:01:12Z" finished-at="2021-02-17T19:01:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeDriver -->
-      </class> <!-- com.HRM_Test.HRMContactDetailsTest -->
+      </class> <!-- com.HRM_Test.AddCustomerTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
