@@ -2,7 +2,6 @@ package com.HRM_Test;
 
 import java.io.IOException;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 
 import com.HRM_Genrics.AutoConstant;
