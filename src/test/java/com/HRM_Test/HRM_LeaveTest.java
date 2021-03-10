@@ -14,7 +14,7 @@ public class HRM_LeaveTest extends BaseTest implements AutoConstant
 	
 	
 	@Test
-	public void hrmLeave() throws IOException
+	public void hrmLeave() throws IOException, InterruptedException
 	{
 		HRM_LoginLogout login = new HRM_LoginLogout (driver);
 		login.HRM_login(ExcelLibrary.getcellvalue(excel_path, Login_sheet_Name, 1, 0),ExcelLibrary.getcellvalue(excel_path, Login_sheet_Name, 1, 1));

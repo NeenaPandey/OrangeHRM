@@ -19,6 +19,12 @@ public class HRM_Leave extends BaseTest implements AutoConstant
 	@FindBy(xpath="(//img[@class='ui-datepicker-trigger'])[1]")
 	private WebElement calander1;
 	
+	@FindBy(xpath="//select[@data-handler='selectMonth']")
+	private WebElement Month;
+	
+	@FindBy(xpath="//select[@data-handler='selectYear']")
+	private WebElement Year;
+	
 	@FindBy(xpath="//a[.='8']")
 	private WebElement StartDate;
 	
@@ -27,6 +33,9 @@ public class HRM_Leave extends BaseTest implements AutoConstant
 	
 	@FindBy(xpath="//select[@data-handler='selectMonth']")
 	private WebElement month;
+	
+	@FindBy(xpath="//select[@data-handler='selectYear']")
+	private WebElement year;
 	
 	@FindBy(xpath="//a[.='7']")
 	private WebElement Date;
@@ -38,28 +47,30 @@ public class HRM_Leave extends BaseTest implements AutoConstant
 		
 	}
 	
-	public void leaveMethod()
+	public void leaveMethod() throws InterruptedException
 	{
 		leaveButton.click();
 		calander1.click();
+		Thread.sleep(2000);
+		
+		Select sel = new Select(Month);
+		sel.selectByVisibleText("Mar");
+		
+		Select sel1 = new Select(Year);
+		sel1.selectByIndex(2021);
+		
 		StartDate.click();
+		Thread.sleep(2000);
+		
 		calander2.click();
-
-		/*driver.findElement(By.xpath=("//select[@data-handler='selectMonth']"));
-		 List <WebElement> month;
-		for(int i =0; i<=month.size(); i++);
 		
-		if(month.get(i).getText().equalIgnoreCase("Apr"))
-			{
-			  month.get(i).click();	
-			  
-			  break;*/
-	//}
+		Select sel2 = new Select(month);
+		sel2.selectByVisibleText("Apr");
 		
-		Select sel = new Select(month);
-		sel.selectByVisibleText("Apr");
+		Select sel3 = new Select(year);
+		sel3.selectByIndex(2021);
 		
-						
+					
 		Date.click();
 	
 		

@@ -2,7 +2,7 @@
 <suite name="Suite" parallel="false">
   <test name="Test">
     <classes>
-      <class name="com.HRM_Test.HRM_LeaveTest"/>
+      <class name="com.HRM_Test.HRM_RecruitmentTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
